@@ -11,7 +11,9 @@ const Home = () => {
             🚀 Random Joke Fetcher
           </Link>
         </li>
-        {/* Add more projects here later */}
+        <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
+            <Link to="/student-entry" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Student Entry Form</Link>
+        </li>
       </ul>
     </div>
   );
