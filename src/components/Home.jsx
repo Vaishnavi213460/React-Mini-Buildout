@@ -17,6 +17,9 @@ const Home = () => {
         <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
             <Link to="/github-user-finder" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Github user finder</Link>
         </li>
+        <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
+            <Link to="/alphabet-buttons" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Alphabet Buttons</Link>
+        </li>
       </ul>
     </div>
   );
