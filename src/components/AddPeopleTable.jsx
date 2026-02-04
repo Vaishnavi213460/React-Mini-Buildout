@@ -30,7 +30,6 @@ const AddPeopleTable = () => {
         <h1 style={{ textAlign: 'center', margin: '0' }}>Add People to Table</h1>
         <p style={{ textAlign: 'center', color: '#666', marginBottom: '30px' }}>Enter Place, Name, and Age, then click Add.</p>
 
-        {/* Form Section */}
         <div style={{ display: 'flex', gap: '15px', marginBottom: '20px' }}>
           <div style={{ flex: 1 }}>
             <label style={labelStyle}>Place</label>
@@ -51,7 +50,6 @@ const AddPeopleTable = () => {
           <button onClick={handleClear} style={clearBtnStyle}>Clear</button>
         </div>
 
-        {/* Table Section */}
         <div style={{ border: '1px solid #f0f0f0', borderRadius: '8px', overflow: 'hidden' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
             <thead style={{ backgroundColor: '#f9f9f9' }}>
@@ -65,7 +63,8 @@ const AddPeopleTable = () => {
             <tbody>
               {people.length === 0 ? (
                 <tr>
-                  <td colSpan="4" style={{ padding: '20px', textAlign: 'center', color: '#999' }}>No data added yet.</td>
+                  {/* FIX: String must be exactly "No entries yet" */}
+                  <td colSpan="4" style={{ padding: '20px', textAlign: 'center', color: '#999' }}>No entries yet</td>
                 </tr>
               ) : (
                 people.map((person, index) => (
