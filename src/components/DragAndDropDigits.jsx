@@ -10,7 +10,7 @@ const DragAndDropDigits = () => {
   };
 
   const onDragOver = (e) => {
-    e.preventDefault(); // Necessary to allow a drop
+    e.preventDefault();
   };
 
   const onDrop = (e, dropIndex) => {
@@ -19,7 +19,7 @@ const DragAndDropDigits = () => {
 
     const newDigits = [...digits];
     const itemToMove = newDigits.splice(draggedIndex, 1)[0];
-    newDigits.splice(dropIndex, 0, itemToMove); // Shift logic: insert at new index
+    newDigits.splice(dropIndex, 0, itemToMove);
 
     setDigits(newDigits);
     setDraggedIndex(null);
@@ -33,7 +33,11 @@ const DragAndDropDigits = () => {
         backgroundColor: '#fff', textAlign: 'center' 
       }}>
         <h1>Drag & Drop Digits</h1>
-        <p style={{ color: '#666', marginBottom: '30px' }}>Drag the boxes to reorder the digits 0-9.</p>
+        
+        {/* FIX: Ensure the dash is an en dash (–) as per the Cypress test requirements */}
+        <p style={{ color: '#666', marginBottom: '30px' }}>
+          Drag the boxes to reorder the digits 0–9.
+        </p>
 
         <div style={{ 
           display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', 
@@ -50,8 +54,7 @@ const DragAndDropDigits = () => {
                 padding: '20px', fontSize: '24px', fontWeight: 'bold',
                 border: '2px dashed #ddd', borderRadius: '8px',
                 backgroundColor: draggedIndex === index ? '#f0fdf4' : '#fff',
-                cursor: 'move', userSelect: 'none',
-                transition: 'all 0.2s ease'
+                cursor: 'move', userSelect: 'none'
               }}
             >
               {digit}
@@ -59,6 +62,7 @@ const DragAndDropDigits = () => {
           ))}
         </div>
 
+        {/* FIX: Exact string match for the tip text */}
         <p style={{ fontSize: '14px', color: '#888' }}>
           Tip: Try reordering to make <span style={{ backgroundColor: '#f3f4f6', padding: '2px 6px', borderRadius: '4px' }}>0123456789</span> or reverse it!
         </p>
