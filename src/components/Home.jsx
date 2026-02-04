@@ -44,6 +44,9 @@ const Home = () => {
         <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
             <Link to="/drag-n-drop" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Drag & Drop</Link>
         </li>
+         <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
+            <Link to="/student-form" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Student Form</Link>
+        </li>
       </ul>
     </div>
   );

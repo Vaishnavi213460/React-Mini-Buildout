@@ -34,7 +34,6 @@ const DragAndDropDigits = () => {
       }}>
         <h1>Drag & Drop Digits</h1>
         
-        {/* FIX: Ensure the dash is an en dash (–) as per the Cypress test requirements */}
         <p style={{ color: '#666', marginBottom: '30px' }}>
           Drag the boxes to reorder the digits 0–9.
         </p>
@@ -62,7 +61,6 @@ const DragAndDropDigits = () => {
           ))}
         </div>
 
-        {/* FIX: Exact string match for the tip text */}
         <p style={{ fontSize: '14px', color: '#888' }}>
           Tip: Try reordering to make <span style={{ backgroundColor: '#f3f4f6', padding: '2px 6px', borderRadius: '4px' }}>0123456789</span> or reverse it!
         </p>
