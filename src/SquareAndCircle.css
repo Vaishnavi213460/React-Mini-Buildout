@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  font-family: sans-serif;
+}
+
+/* Base requirements for the assessment */
+.square {
+  width: 300px;
+  height: 300px;
+  background-color: #ffcc00; /* Yellow */
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 240px;
+  height: 240px;
+  background-color: #2563eb; /* Blue */
+  border: 2px solid #000;
+  border-radius: 50%;
+}

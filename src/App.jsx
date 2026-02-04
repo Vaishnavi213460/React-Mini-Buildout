@@ -7,6 +7,7 @@ import GitHubUserFinder from './components/GitHubUserFinder';
 import AlphabetButtons from './components/AlphabetButtons';
 import EvenOddChecker from './components/EvenOddChecker';
 import DynamicList from './components/DynamicList';
+import SquareAndCircle from './components/SquareAndCircle';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/alphabet-buttons" element={<AlphabetButtons />} />
           <Route path="/check-parity" element={<EvenOddChecker />} />
           <Route path="/dynamic-list" element={<DynamicList />} />
+          <Route path="/square-and-circle" element={<SquareAndCircle />} />
         </Routes>
       </div>
     </Router>
