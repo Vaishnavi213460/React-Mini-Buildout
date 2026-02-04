@@ -12,6 +12,7 @@ import AddPeopleTable from './components/AddPeopleTable';
 import TicTacToe from './components/TicTacToe';
 import SudokuValidator from './components/SudokuValidator';
 import SnakeAndLadders from './components/SnakeAndLadders';
+import DragAndDropDigits from './components/DragAndDropDigits';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/tic-tac-toe" element={<TicTacToe />} />
           <Route path="/sudoku-validator" element={<SudokuValidator />} />
           <Route path="/snake-ladder" element={<SnakeAndLadders />} />
+          <Route path="/drag-n-drop" element={<DragAndDropDigits />} />
         </Routes>
       </div>
     </Router>
