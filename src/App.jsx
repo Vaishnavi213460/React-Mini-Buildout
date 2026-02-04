@@ -9,6 +9,7 @@ import EvenOddChecker from './components/EvenOddChecker';
 import DynamicList from './components/DynamicList';
 import SquareAndCircle from './components/SquareAndCircle';
 import AddPeopleTable from './components/AddPeopleTable';
+import TicTacToe from './components/TicTacToe';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/dynamic-list" element={<DynamicList />} />
           <Route path="/square-and-circle" element={<SquareAndCircle />} />
           <Route path="/add-people" element={<AddPeopleTable />} />
+          <Route path="/tic-tac-toe" element={<TicTacToe />} />
         </Routes>
       </div>
     </Router>

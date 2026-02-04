@@ -32,6 +32,9 @@ const Home = () => {
         <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
             <Link to="/add-people" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Add People</Link>
         </li>
+        <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
+            <Link to="/tic-tac-toe" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Tic Tac Toe</Link>
+        </li>
       </ul>
     </div>
   );
