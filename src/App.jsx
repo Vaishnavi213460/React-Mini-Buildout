@@ -5,6 +5,7 @@ import JokeFetcher from './components/JokeFetcher';
 import StudentEntry from './components/StudentEntry';
 import GitHubUserFinder from './components/GitHubUserFinder';
 import AlphabetButtons from './components/AlphabetButtons';
+import EvenOddChecker from './components/EvenOddChecker';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/student-entry" element={<StudentEntry />} />
           <Route path="/github-user-finder" element={<GitHubUserFinder />} />
           <Route path="/alphabet-buttons" element={<AlphabetButtons />} />
+          <Route path="/check-parity" element={<EvenOddChecker />} />
         </Routes>
       </div>
     </Router>
