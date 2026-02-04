@@ -38,6 +38,9 @@ const Home = () => {
          <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
             <Link to="/sudoku-validator" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Sudoku Validator</Link>
         </li>
+        <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
+            <Link to="/snake-ladder" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Snake And Ladder</Link>
+        </li>
       </ul>
     </div>
   );
