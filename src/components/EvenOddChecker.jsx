@@ -9,7 +9,7 @@ const EvenOddChecker = () => {
     const num = parseInt(inputValue);
 
     if (isNaN(num)) {
-      setResultMessage('Please enter a valid number');
+      setResultMessage('Not a valid number!');
       setIsEven(null);
       return;
     }
