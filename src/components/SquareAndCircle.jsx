@@ -4,7 +4,7 @@ import '../SquareAndCircle.css';
 const SquareAndCircle = () => {
   return (
     <div className="container">
-      <h1>Sqaure & Circle</h1>
+      <h1>Square & Circle</h1>
       <div className="square">
         <div className="circle"></div>
       </div>
