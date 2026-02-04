@@ -23,6 +23,9 @@ const Home = () => {
         <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
             <Link to="/check-parity" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Check Parity</Link>
         </li>
+        <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
+            <Link to="/dynamic-list" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Dynamic List</Link>
+        </li>
       </ul>
     </div>
   );
