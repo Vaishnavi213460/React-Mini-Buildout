@@ -29,6 +29,9 @@ const Home = () => {
         <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
             <Link to="/square-and-circle" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Square & Circle</Link>
         </li>
+        <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
+            <Link to="/add-people" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Add People</Link>
+        </li>
       </ul>
     </div>
   );

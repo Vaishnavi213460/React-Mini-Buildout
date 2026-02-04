@@ -8,6 +8,7 @@ import AlphabetButtons from './components/AlphabetButtons';
 import EvenOddChecker from './components/EvenOddChecker';
 import DynamicList from './components/DynamicList';
 import SquareAndCircle from './components/SquareAndCircle';
+import AddPeopleTable from './components/AddPeopleTable';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/check-parity" element={<EvenOddChecker />} />
           <Route path="/dynamic-list" element={<DynamicList />} />
           <Route path="/square-and-circle" element={<SquareAndCircle />} />
+          <Route path="/add-people" element={<AddPeopleTable />} />
         </Routes>
       </div>
     </Router>
