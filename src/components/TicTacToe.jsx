@@ -89,7 +89,7 @@ const TicTacToe = () => {
         </div>
 
         <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
-          <button onClick={resetGame} style={primaryBtn}>Play Again</button>
+          <button onClick={resetGame} style={primaryBtn}>Restart Round</button>
           <button onClick={resetAll} style={secondaryBtn}>Reset All</button>
         </div>
       </div>
