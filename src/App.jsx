@@ -10,6 +10,7 @@ import DynamicList from './components/DynamicList';
 import SquareAndCircle from './components/SquareAndCircle';
 import AddPeopleTable from './components/AddPeopleTable';
 import TicTacToe from './components/TicTacToe';
+import SudokuValidator from './components/SudokuValidator';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/square-and-circle" element={<SquareAndCircle />} />
           <Route path="/add-people" element={<AddPeopleTable />} />
           <Route path="/tic-tac-toe" element={<TicTacToe />} />
+          <Route path="/sudoku-validator" element={<SudokuValidator />} />
         </Routes>
       </div>
     </Router>

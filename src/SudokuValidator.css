@@ -1,0 +1,27 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(9, 40px); /* 9 columns of 40px each */
+  grid-template-rows: repeat(9, 40px);    /* 9 rows of 40px each */
+  gap: 1px;
+  background-color: #000; /* This creates the black grid lines */
+  border: 2px solid #000;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: none; /* Let the board gap act as the border */
+  background-color: #fff;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Optional: thick borders to separate 3x3 boxes */
+.cell:nth-child(3n) {
+  border-right: 2px solid #000;
+}
+.cell:nth-child(9n) {
+  border-right: none;
+}

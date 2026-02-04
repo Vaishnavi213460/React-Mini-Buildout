@@ -35,6 +35,9 @@ const Home = () => {
         <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
             <Link to="/tic-tac-toe" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Tic Tac Toe</Link>
         </li>
+         <li style={{ padding: '10px', border: '1px solid #ddd', marginBottom: '10px', borderRadius: '5px' }}>
+            <Link to="/sudoku-validator" style={{ textDecoration: 'none', color: '#007bff', fontSize: '18px' }}>📝 Sudoku Validator</Link>
+        </li>
       </ul>
     </div>
   );
